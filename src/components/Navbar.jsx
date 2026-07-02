@@ -15,7 +15,7 @@ export default function Navbar() {
       <a href="/proyectos">Ver Proyectos</a>
       {rol && rol.includes("ADMIN") && (
         <>
-          <a href="/gestionar">Gestionar Proyectos</a>
+          <a href="/proyectos">Gestionar Proyectos</a>
           <a href="/crear-tarea">Crear Tareas</a>
         </>
       )}

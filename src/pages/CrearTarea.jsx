@@ -55,8 +55,8 @@ export default function CrearTarea() {
       <Navbar />
       <h2>Crear Tarea</h2>
 
-      {alerta && <div style={{ color: "red" }}>{alerta}</div>}
-      {exito && <div style={{ color: "green" }}>{exito}</div>}
+      {alerta && <div className="alert-error">{alerta}</div>}
+      {exito && <div className="alert-success">{exito}</div>}
 
       <form onSubmit={handleSubmit}>
         <div>

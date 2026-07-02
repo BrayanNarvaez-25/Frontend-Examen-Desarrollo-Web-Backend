@@ -24,12 +24,20 @@ export default function Login() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Iniciar Sesión</h2>
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      <input placeholder="Usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
-      <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} />
-      <button type="submit">Ingresar</button>
-    </form>
+    <div className="login-wrapper">
+      <form onSubmit={handleSubmit}>
+        <h2>Iniciar Sesión</h2>
+        {error && <div className="alert-error">{error}</div>}
+        <div>
+          <label>Usuario</label>
+          <input placeholder="usuario" value={username} onChange={(e) => setUsername(e.target.value)} />
+        </div>
+        <div>
+          <label>Contraseña</label>
+          <input type="password" placeholder="••••••••" value={password} onChange={(e) => setPassword(e.target.value)} />
+        </div>
+        <button type="submit">Ingresar</button>
+      </form>
+    </div>
   );
 }

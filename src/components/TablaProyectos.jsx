@@ -4,7 +4,7 @@ export default function TablaProyectos({ proyectos }) {
   }
 
   return (
-    <table border="1" cellPadding="8" style={{ width: "100%", borderCollapse: "collapse" }}>
+    <table>
       <thead>
         <tr>
           <th>ID</th>
